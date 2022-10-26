@@ -4,7 +4,7 @@ from random import choice
 from sys import argv
 from win32com.client import Dispatch
 
-def createStarupShortcut(file_path):
+def createStartupShortcut(file_path):
     dir_path = path.dirname(file_path)
     file_name = path.basename(file_path)
     file_name_without_extension = path.splitext(file_name)[0]
@@ -35,8 +35,8 @@ def main():
             
             setWallpaper(random_wallpaper_path)
 
-            createStarupShortcut(file_path)
-
+            createStartupShortcut(file_path)
+            
 if __name__ == "__main__":
     main()   
             
